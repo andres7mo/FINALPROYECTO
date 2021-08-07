@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title style="text-align: center;"><b>Loggin</b></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <ion-item>
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input type="text" #email required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" #password required></ion-input>
+  </ion-item>
+  <br>
+  <ion-button type="submit" expand="block" (click)="onLogin(email, password)">Loggin</ion-button>
+
+<span class="divider line one-line">Registrate:</span>
+<ion-row>
+  <ion-col>
+    <p class="ion-text-center">
+      <a routerLink="/register">Crea una Cuenta  </a>
+    </p>
+  </ion-col>
+
+</ion-row>
+<ion-row>
+  <ion-col>
+    <p class="ion-text-center">
+      <a routerLink="/forgot-password">¿Recuperar Contraseña?</a>
+    </p>
+  </ion-col>
+</ion-row>
+
+</ion-content>
